@@ -1,0 +1,54 @@
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 380px;
+  font-family: sans-serif;
+}
+img {
+  display: flex;
+  width: 380px;
+  border-radius: 10px 10px 0 0;
+}
+.box {
+  background-color: #283e50;
+  text-align: center;
+  color: #fff;
+}
+.text {
+  padding: 25px 15px;
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
+}
+.allButtons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.buttonPravidla {
+  background-color: #1fcca4;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin-bottom: 1px;
+}
+.buttonZacit {
+  background-color: #0197f6;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+.buttonPravidla:hover {
+  background-color: #1cbb96;
+}
+.buttonZacit:hover {
+  background-color: #0090e9;
+}
