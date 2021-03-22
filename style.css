@@ -5,6 +5,7 @@ body {
   margin: 0;
 }
 .container {
+  margin: 80px auto; /* pls heeelp! na hulváta jsem tam dala px, protože za boha nemůžu přijít na to, jak to fláknout přímo na střed!:(( */
   width: 380px;
   font-family: sans-serif;
 }
