@@ -11,7 +11,7 @@ body {
   width: 380px;
   font-family: sans-serif;
 }
-img {
+.container img {
   display: flex;
   width: 380px;
   border-radius: 10px 10px 0 0;
