@@ -1,12 +1,13 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  margin-top: 100px; /*bez tohoto marginu jsem měla kontejner přilepenej nahoře, proč se špatný věci dějou dobrým lidem :( */
 }
 .container {
-  position: relative;
-  top: 10%;
+  /* position: relative;
+  top: 10%; bože proč mi tohle přestalo fungovat???:'( objevil se mi scrollbar, kterej tady předtim nebyl, budu brečet!!!*/
   margin: auto;
   width: 380px;
   font-family: sans-serif;
@@ -22,13 +23,14 @@ body {
   color: #fff;
 }
 .text {
-  padding: 25px 15px;
+  padding: 0px 30px 20px;
 }
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 50px;
   font-weight: normal;
   margin: 0;
+  color: #fff;
 }
 .allButtons {
   display: flex;
@@ -54,4 +56,89 @@ h1 {
 }
 .buttonZacit:hover {
   background-color: #0090e9;
+}
+
+/* stylování pravidla.html */
+
+.p_container {
+  width: 600px;
+  background-color: #283e50;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+li,
+a,
+p {
+  color: #fff;
+  font-family: sans-serif;
+}
+li {
+  margin: 10px 0;
+  padding-left: 10px;
+}
+ol {
+  margin: 0 20px;
+}
+.btnUvodniStr {
+  background-color: #1fcca4;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin-bottom: 1px;
+  margin-top: 20px;
+}
+.btnUvodniStr:hover {
+  background-color: #1cbb96;
+}
+.btnPravidla {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.kolecko,
+.krizek {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+.pictures {
+  text-align: center;
+}
+.pic img {
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .pictures {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  .pic {
+    width: 45%;
+  }
+}
+@media (max-width: 499px) {
+  .pictures {
+    display: flex;
+    flex-direction: column;
+  }
+  .p_container {
+    width: 80%;
+  }
+  .pic {
+    width: 80%;
+  }
+  .pictures {
+    align-items: center;
+    padding-top: 30px;
+  }
 }
