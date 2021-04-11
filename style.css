@@ -6,7 +6,7 @@ body {
   margin-top: 100px; /*bez tohoto marginu jsem měla kontejner přilepenej nahoře, proč se špatný věci dějou dobrým lidem :( */
 }
 .container {
-  /* position: relative;
+  /*position: relative;
   top: 10%; bože proč mi tohle přestalo fungovat???:'( objevil se mi scrollbar, kterej tady předtim nebyl, budu brečet!!!*/
   margin: auto;
   width: 380px;
@@ -141,4 +141,65 @@ ol {
     align-items: center;
     padding-top: 30px;
   }
+}
+
+/* stylování hra.html */
+
+/*1. stylování kontejneru, hl. nabídky a tlačítek*/
+.h_container {
+  max-width: 80vmin;
+  margin: auto;
+  margin-top: 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.player p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.btnHome {
+  background-color: #1fcca4;
+  padding: 12px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.btnHome:hover {
+  background-color: #1cbb96;
+}
+.btnRestart {
+  background-color: #0197f6;
+  padding: 12px 8px;
+  border-radius: 5px;
+}
+.btnRestart:hover {
+  background-color: #0090e9;
+}
+.gameButtons {
+  margin-top: 10px;
+}
+.gameButtons img {
+  vertical-align: middle;
+}
+
+/*hrátky s hracím polem*/
+
+.playingField {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px;
+  opacity: 0.5;
+}
+.playingField button {
+  height: calc(80vmin / 10);
+  flex-basis: calc(100% / 10);
+  border: solid 1px;
+}
+.playingField button:hover,
+.playingField button:focus {
+  filter: brightness(110%);
 }
