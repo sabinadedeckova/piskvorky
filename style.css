@@ -149,7 +149,7 @@ ol {
 .h_container {
   max-width: 80vmin;
   margin: auto;
-  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .toolbar {
@@ -191,15 +191,45 @@ ol {
 .playingField {
   display: flex;
   flex-wrap: wrap;
-  border: solid 1px;
-  opacity: 0.5;
+  border: solid 0.8px;
+  /*opacity: 0.5; */
 }
 .playingField button {
   height: calc(80vmin / 10);
   flex-basis: calc(100% / 10);
-  border: solid 1px;
+  border: solid 0.8px black;
+  background-color: rgba(228, 221, 221, 0.418);
 }
+
 .playingField button:hover,
 .playingField button:focus {
   filter: brightness(110%);
+}
+
+/*JS*/
+
+.board__field--circle {
+  background-image: url('circle.svg');
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: center;
+  animation-name: zvětšení;
+  animation-duration: 0.3s;
+}
+.board__field--cross {
+  background-image: url('cross.svg');
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position: center;
+  animation-name: zvětšení;
+  animation-duration: 0.15s;
+}
+
+@keyframes zvětšení {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 55%;
+  }
 }
