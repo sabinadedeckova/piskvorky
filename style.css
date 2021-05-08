@@ -214,7 +214,7 @@ ol {
   background-size: 55%;
   background-position: center;
   animation-name: zvětšení;
-  animation-duration: 0.3s;
+  animation-duration: 0.15s;
 }
 .board__field--cross {
   background-image: url('cross.svg');
